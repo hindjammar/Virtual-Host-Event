@@ -1,0 +1,220 @@
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro');
+
+body {
+  background: linear-gradient(90deg, #f9f6f8, #d3e2ed, #8c9da8);
+  padding: 3px 0px;
+}
+
+.card-image img {
+  width: 40%;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+
+}
+h2{
+  font-size: 80px;
+  font-weight: 400;
+  color: #08254a;
+  font-family: 'Untitled Serif';
+  text-align: center;
+  border: solid #17579b;
+  border-radius: 6px;
+  background-color: #b8c2c8;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #4e1d5e, #702870);
+  color: transparent;
+  font-family: 'Untitled Serif';
+  text-align: center;
+  margin-top: 3%;
+  -webkit-background-clip: text;
+}
+
+.title1 {
+
+
+  margin-left: 10%;
+  font-size: 44px;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.title2 {
+  margin-left: 15%;
+  font-size: 25px;
+  margin-top: 2%;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.info {
+  font-size: 19px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+} 
+.b{
+  margin: 20px;
+}
+label{
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #4e1d5e;
+}
+.nine h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.nine h1 span {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #444;
+  word-spacing: 1px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.nine h1 span:after,
+.nine h1 span:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
+.dt  {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: auto;
+  color: rgb(138, 10, 150);
+  
+}
+
+.im {
+  margin-right: 2%;
+} */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro');
+
+body {
+  background: #eee;
+  padding: 40px 0px;
+}
+
+.card-image img{
+  width: 55%;
+border-radius: 30px;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+    
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #858585, #35006b);
+  color: transparent;
+  font-family: 'Untitled Serif';
+  text-align: center;
+  margin-top: 3%;
+  -webkit-background-clip: text;
+}
+
+.title1{
+  
+   
+   margin-left: 10%;
+   font-size: 44px;
+   font-weight: 200;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+}
+.title2 {
+  margin-left: 15%;
+  font-size: 25px;
+  margin-top: 2%;
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.info{
+  font-size: 19px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.nine h1 {
+  text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+  font-family:"Playfair Display", serif; font-weight:400;
+}
+.nine h1 span {
+  margin-top: 5px;
+    font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.nine h1 span:after,.nine h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
+.dt p {
+  font-size:26px; font-weight:700;
+    letter-spacing:1px; 
+    text-transform:uppercase;
+     text-align:center; 
+     margin:auto; 
+     margin-top: 5%;
+     margin-left: 10%;
+     margin-right: 10%;
+}
+
+.im{
+  margin-right: 2%;
+}
+
+

@@ -1,0 +1,298 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+  } */
+
+/* body{
+    background: #e8e8e8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+   */
+
+.ab {
+
+  background: -webkit-linear-gradient(to right, #1c171c, #161116, #080708);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b0a0b, #452345, #171717);
+}
+
+.paragraphe {
+  text-align: center;
+}
+
+.services-section {
+
+
+  /* background: -webkit-linear-gradient(to right, #1c171c, #161116, #080708);  
+    background: linear-gradient(to right, #0b0a0b, #452345, #171717);  */
+
+  /* background-image: url("../images/color-sharp.png");
+    background-repeat: no-repeat; */
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -80px;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+
+
+
+}
+
+.inner-width {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.services-section h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 50px;
+
+}
+
+.services-section h1 strong {
+  color: #f12082;
+}
+
+.service {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.service-icon {
+  width: 90px;
+  height: 70px;
+  margin: auto;
+  background: #ecf6ff;
+  border-radius: 50%;
+  color: #e781df;
+  line-height: 60px;
+  font-size: 25px;
+}
+
+.service-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0;
+  color: aliceblue;
+}
+
+.service-desc {
+  max-width: 400px;
+  margin: auto;
+  color: #333;
+  font-size: 17px;
+  color: aliceblue;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  width: 14px;
+  height: 14px;
+  background: #808080 !important;
+  margin: 0 6px;
+  border-radius: 14px;
+  outline: none;
+  transition: .3s linear;
+}
+
+.owl-dot.active {
+  width: 36px;
+  background: #eb40ce !important;
+}
+
+.owl-dot:hover {
+  width: 36px;
+  background: #cc5ec7 !important;
+}
+
+
+
+/* css card */
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #9b4e9d;
+}
+
+article a:focus {
+  outline: 1px dotted #c061b6;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #b563b5;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/************************ 
+  Generic layout (demo looks)
+  **************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 48px 0;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  min-height: 100vh;
+}
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+
+  .article-body {
+    padding-left: 0;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pacard {
+  color: #080708;
+}
+
+.j{
+  justify-content: center;
+  display: flex;
+  
+  font-weight: lighter;
+  
+  
+}
+.t{
+  text-align: center;
+  margin: 20px;
+}
+
+.title{
+  font-family: 'Courier New', Courier, monospace;
+}
